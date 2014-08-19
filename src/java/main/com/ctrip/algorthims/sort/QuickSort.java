@@ -17,8 +17,35 @@ public class QuickSort implements Sorter {
 		if(unSortedNumbers == null){
 			return null;
 		}
-		int[] resultArray = new int[unSortedNumbers.length];
-		return resultArray;
+		quickSort(unSortedNumbers,0,unSortedNumbers.length-1);
+		return unSortedNumbers;
+	}
+	private void quickSort(int[] unSortedNumbers, int startIdx, int endIdx){
+		if(startIdx < endIdx){			
+			int partPos = partition(unSortedNumbers, startIdx, endIdx);
+			quickSort(unSortedNumbers, startIdx, partPos-1);
+			quickSort(unSortedNumbers, partPos+1, endIdx);
+		}
+	}
+	private int partition(int[] unSortedNumbers, int startIdx, int endIdx){
+		int retPos = -1;
+		int keyPos = startIdx+(int)Math.round(Math.random()*(endIdx-startIdx));
+		int key = unSortedNumbers[keyPos];
+		unSortedNumbers[keyPos] = unSortedNumbers[endIdx];
+		unSortedNumbers[endIdx] = key;
+		int pos = startIdx-1;
+		for(int idx=startIdx;idx<=endIdx-1;idx++){
+			if(unSortedNumbers[idx]<=key){
+				pos++;
+				int tmpNum = unSortedNumbers[idx];
+				unSortedNumbers[idx] = unSortedNumbers[pos];
+				unSortedNumbers[pos] = tmpNum;
+			}
+		}
+		unSortedNumbers[endIdx] = unSortedNumbers[pos+1];
+		unSortedNumbers[pos+1] = key;
+		retPos = pos+1;
+		return retPos;
 	}
 	private QuickSort(){}
 	public static QuickSort getInstance(){
