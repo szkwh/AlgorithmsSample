@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.ctrip.algorthims.sort;
+package com.ctrip.algorithms.sort;
 
 /**
  * @author kwh

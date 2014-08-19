@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.ctrip.algorthims.common.exception;
+package com.ctrip.algorithms.common.exception;
 
 /**
  * @author kwh

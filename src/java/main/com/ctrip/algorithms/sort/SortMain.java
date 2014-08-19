@@ -1,8 +1,8 @@
-package com.ctrip.algorthims.sort;
+package com.ctrip.algorithms.sort;
 
 import java.util.Arrays;
 
-import com.ctrip.algorthims.common.exception.SortTypeNotSupportedException;
+import com.ctrip.algorithms.common.exception.SortTypeNotSupportedException;
 
 public class SortMain {
 	public static void main(String[] args){

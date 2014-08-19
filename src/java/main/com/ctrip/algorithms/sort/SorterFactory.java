@@ -1,9 +1,9 @@
 /**
  * 
  */
-package com.ctrip.algorthims.sort;
+package com.ctrip.algorithms.sort;
 
-import com.ctrip.algorthims.common.exception.SortTypeNotSupportedException;
+import com.ctrip.algorithms.common.exception.SortTypeNotSupportedException;
 
 /**
  * @author kwh

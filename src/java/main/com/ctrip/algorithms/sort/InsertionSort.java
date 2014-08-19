@@ -1,9 +1,9 @@
 /**
  * 
  */
-package com.ctrip.algorthims.sort;
+package com.ctrip.algorithms.sort;
 
-import com.ctrip.algorthims.sort.Sorter;
+import com.ctrip.algorithms.sort.Sorter;
 
 /**
  * @author kwh

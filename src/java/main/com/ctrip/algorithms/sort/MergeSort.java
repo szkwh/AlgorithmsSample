@@ -1,4 +1,4 @@
-package com.ctrip.algorthims.sort;
+package com.ctrip.algorithms.sort;
 
 public class MergeSort implements Sorter {
 	private static final MergeSort m_instance = new MergeSort();
