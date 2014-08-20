@@ -34,6 +34,9 @@ public class SorterFactory {
 		if(sortEnum.equals(SortTypeEnum.QuickSort)){
 			return QuickSort.getInstance();
 		}
+		if(sortEnum.equals(SortTypeEnum.HeapSort)){
+			return HeapSort.getInstance();
+		}
 		throw new SortTypeNotSupportedException(sortType);
 	}
 }
